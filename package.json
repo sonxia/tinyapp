@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sonxia/tinyapp/issues"
   },
-  "homepage": "https://github.com/sonxia/tinyapp#readme"
+  "homepage": "https://github.com/sonxia/tinyapp#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
