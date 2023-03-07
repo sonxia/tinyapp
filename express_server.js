@@ -4,7 +4,16 @@ const PORT = 8080; // default port 8080
 
 app.set("view engine", "ejs");
 
-function generateRandomString() {} 
+function generateRandomString(length = 6) {
+  const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+
+} 
+return result;
+};
 
 const urlDatabase = {
   "b2xVn2": "http://www.lighthouselabs.ca",
